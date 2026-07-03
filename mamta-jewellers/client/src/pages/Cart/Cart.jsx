@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext.jsx";
 import styles from "./Cart.module.css";
 
-const WHATSAPP_NUMBER = "918757509484"; // country code 91 + number, no + or spaces
+const WHATSAPP_NUMBER = "919984374060"; // country code 91 + number, no + or spaces
 
 const Cart = () => {
   const { items, updateQuantity, removeFromCart, totalPrice } = useCart();
