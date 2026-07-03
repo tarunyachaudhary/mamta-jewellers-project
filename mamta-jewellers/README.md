@@ -164,8 +164,6 @@ client/.env
 - A MongoDB database — [MongoDB Atlas](https://www.mongodb.com/atlas) (free tier) or
   a local install
 - An [ImageKit](https://imagekit.io) account (free tier)
-- A [Firebase](https://console.firebase.google.com) project with **Google** enabled
-  under Authentication → Sign-in method
 - A Gmail account with **2-Step Verification** enabled, and an
   [App Password](https://myaccount.google.com/apppasswords) generated for it
 
