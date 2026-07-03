@@ -1,0 +1,136 @@
+.hero {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(120deg, rgba(36,20,23,0.72), rgba(140,28,63,0.55)),
+    url("https://images.unsplash.com/photo-1617038260897-41a1f14a8ca5?q=80&w=1400");
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+}
+
+.heroContent {
+  max-width: 640px;
+  margin: 0 6%;
+}
+
+.heroContent h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  color: var(--color-white);
+  margin: 14px 0 18px;
+}
+
+.heroContent p {
+  font-size: 1.05rem;
+  color: #f1e6da;
+  margin-bottom: 30px;
+  max-width: 480px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.categories {
+  padding: 80px 6% 20px;
+}
+
+.categories h2 {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.categoryCard {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.categoryCard img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.categoryCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(36,20,23,0.75), transparent 60%);
+}
+
+.categoryCard span {
+  position: relative;
+  padding: 18px;
+  z-index: 1;
+}
+
+.categoryCard:hover img {
+  transform: scale(1.08);
+}
+
+.featured {
+  padding: 80px 6%;
+}
+
+.featuredHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.viewAll {
+  font-weight: 600;
+  color: var(--color-crimson);
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.about {
+  background: var(--color-crimson);
+  color: var(--color-white);
+  padding: 80px 6%;
+  text-align: center;
+}
+
+.about h2 {
+  color: var(--color-white);
+  max-width: 700px;
+  margin: 12px auto 18px;
+}
+
+.about p {
+  max-width: 560px;
+  margin: 0 auto;
+  color: #f2dfe6;
+}
+
+@media (max-width: 900px) {
+  .categoryGrid, .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

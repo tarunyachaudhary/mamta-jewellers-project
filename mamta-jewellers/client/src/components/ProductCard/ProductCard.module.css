@@ -1,0 +1,73 @@
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: block;
+}
+
+.imageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .imageWrap img {
+  transform: scale(1.05);
+}
+
+.soldOut {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--color-ink);
+  color: var(--color-white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.category {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.body h3 {
+  font-size: 1.05rem;
+  margin: 2px 0 4px;
+}
+
+.price {
+  color: var(--color-crimson);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
