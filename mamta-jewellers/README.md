@@ -21,16 +21,16 @@ products, orders, and additional admin accounts.
 
 ```
 mamta-jewellers/
-├── client/                        React storefront (Vite)
+├── client/                          React storefront (Vite)
 │   └── src/
-│       ├── api/axios.js            axios instance — attaches JWT to every request
-│       ├── firebase.js             Firebase config + Google auth provider
+│       ├── api/axios.js             axios instance — attaches JWT to every request
+│       ├── firebase.js              Firebase config + Google auth provider
 │       ├── context/
-│       │   ├── AuthContext.jsx     login/register/adminLogin/googleLogin/
-│       │   │                       updateProfile/verifyOtp, persists session to localStorage
-│       │   └── CartContext.jsx     cart state, persisted to localStorage,
-│       │                           auto-clears when the user logs out
-│       ├── components/             Navbar, Footer, ProductCard, route guards
+│       │   ├── AuthContext.jsx      login/register/adminLogin/googleLogin/
+│       │   │                        updateProfile/verifyOtp, persists session to localStorage
+│       │   └── CartContext.jsx      cart state, persisted to localStorage,
+│       │                            auto-clears when the user logs out
+│       ├── components/              Navbar, Footer, ProductCard, route guards
 │       └── pages/
 │           ├── Home, Collection, ProductDetail, Cart
 │           ├── Login, Register, ForgotPassword (2-step: email → OTP)
@@ -164,8 +164,6 @@ client/.env
 - A MongoDB database — [MongoDB Atlas](https://www.mongodb.com/atlas) (free tier) or
   a local install
 - An [ImageKit](https://imagekit.io) account (free tier)
-- A [Firebase](https://console.firebase.google.com) project with **Google** enabled
-  under Authentication → Sign-in method
 - A Gmail account with **2-Step Verification** enabled, and an
   [App Password](https://myaccount.google.com/apppasswords) generated for it
 
